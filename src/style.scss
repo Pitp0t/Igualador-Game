@@ -1,0 +1,200 @@
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    overflow-x: hidden;
+    
+}
+
+
+//REACT PROYECT
+
+
+.nav{
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.5em;
+
+    .logoContainer{
+        display: flex;
+        align-items: center;
+    }
+    .nav--logo{
+        width: 50px;
+        margin-right: .5em;
+        &:hover{
+            transform: rotate(360deg) scale(1.1);
+            transition: transform .5s;
+        }
+    }
+    .portfolio{
+        padding: .8em 1.5em;
+        margin: auto;
+        border:5px solid #ec7a2f;
+        border-radius: 3em;
+        background-color: white;
+      
+        a{
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+            
+
+        }
+      
+
+    }
+    .nav--instagram{
+        font-size: 1.4em;
+    }
+}
+
+.mainContainer{
+    margin: 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title-game{
+        text-align: center;
+        font-size: 3em;
+    
+    }
+    .subtitle-game{
+        margin-top: 1em;
+        text-align: center;
+        font-weight: 500;
+    
+    }
+    
+
+ 
+}
+
+
+.main{
+    margin: 1em 0;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(5,10vw);
+    grid-template-rows: repeat(2,10vw);
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    user-select:none;
+    .boxGame{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow:0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%); 
+        border-radius: 1em;
+        cursor:pointer;
+        .boxGame__h2{
+            font-size: 2em;
+        }
+    }
+
+    
+}
+
+.rerolls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    .buttonReRoll{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        cursor: pointer;
+        margin: 1em 0;
+        width: fit-content;
+        padding: .8em 1.2em;
+        font-weight: 600;
+        border: none;
+        border-radius: .2em;
+        background-color: blue;
+        color: white;
+        font-size: 1.1em;
+        &:active{
+            transform:scale(.9);
+        }
+        img{
+            width: 35px;
+        }
+    }
+
+
+}
+
+
+
+.wonContainer{
+    
+    margin:0 5em;
+    height: 60vh;
+    width: 60vh;
+    position: fixed;
+    top:20%;
+    background-color: white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+
+    .youWon{
+        font-size: 3em;
+        font-weight: 500;
+    }
+    .wonButton{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        cursor: pointer;
+        margin: 1em 0;
+        width: fit-content;
+        padding: .8em 1.2em;
+        font-weight: 600;
+        border: none;
+        border-radius: .2em;
+        background-color: blue;
+        color: white;
+        font-size: 1.1em;
+        &:active{
+            transform:scale(.9);
+        }
+    }
+}
+.confetti{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .title-game{
+        font-size: 2.6em;
+    }
+    .main{
+        height: 35vh;
+        grid-template-columns: repeat(5,15vw);
+        grid-template-rows: repeat(2,15vw);
+    }
+}
+
+
+
+

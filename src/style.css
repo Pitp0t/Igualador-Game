@@ -1,0 +1,176 @@
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.nav {
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.5em;
+}
+.nav .logoContainer {
+  display: flex;
+  align-items: center;
+}
+.nav .nav--logo {
+  width: 50px;
+  margin-right: 0.5em;
+}
+.nav .nav--logo:hover {
+  transform: rotate(360deg) scale(1.1);
+  transition: transform 0.5s;
+}
+.nav .portfolio {
+  padding: 0.8em 1.5em;
+  margin: auto;
+  border: 5px solid #ec7a2f;
+  border-radius: 3em;
+  background-color: white;
+}
+.nav .portfolio a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.nav .nav--instagram {
+  font-size: 1.4em;
+}
+
+.mainContainer {
+  margin: 2em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer .title-game {
+  text-align: center;
+  font-size: 3em;
+}
+.mainContainer .subtitle-game {
+  margin-top: 1em;
+  text-align: center;
+  font-weight: 500;
+}
+
+.main {
+  margin: 1em 0;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(5, 10vw);
+  grid-template-rows: repeat(2, 10vw);
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.main .boxGame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  border-radius: 1em;
+  cursor: pointer;
+}
+.main .boxGame .boxGame__h2 {
+  font-size: 2em;
+}
+
+.rerolls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rerolls .buttonReRoll {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  margin: 1em 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.8em 1.2em;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.2em;
+  background-color: blue;
+  color: white;
+  font-size: 1.1em;
+}
+.rerolls .buttonReRoll:active {
+  transform: scale(0.9);
+}
+.rerolls .buttonReRoll img {
+  width: 35px;
+}
+
+.wonContainer {
+  margin: 0 5em;
+  height: 60vh;
+  width: 60vh;
+  position: fixed;
+  top: 20%;
+  background-color: white;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+.wonContainer .youWon {
+  font-size: 3em;
+  font-weight: 500;
+}
+.wonContainer .wonButton {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  margin: 1em 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.8em 1.2em;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.2em;
+  background-color: blue;
+  color: white;
+  font-size: 1.1em;
+}
+.wonContainer .wonButton:active {
+  transform: scale(0.9);
+}
+
+.confetti {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .title-game {
+    font-size: 2.6em;
+  }
+
+  .main {
+    height: 35vh;
+    grid-template-columns: repeat(5, 15vw);
+    grid-template-rows: repeat(2, 15vw);
+  }
+}/*# sourceMappingURL=style.css.map */
