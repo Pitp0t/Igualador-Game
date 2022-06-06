@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Igualador-game/static/css/main.12e8f5a6.css",
+    "main.js": "/Igualador-game/static/js/main.ef16e3e8.js",
+    "static/media/dice.svg": "/Igualador-game/static/media/dice.f1ec1252281a9e69533e4328eed40203.svg",
+    "index.html": "/Igualador-game/index.html",
+    "static/media/igualador.svg": "/Igualador-game/static/media/igualador.dd29d52342f51c6aee6dabff6877afae.svg",
+    "main.12e8f5a6.css.map": "/Igualador-game/static/css/main.12e8f5a6.css.map",
+    "main.ef16e3e8.js.map": "/Igualador-game/static/js/main.ef16e3e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12e8f5a6.css",
+    "static/js/main.ef16e3e8.js"
+  ]
+}
